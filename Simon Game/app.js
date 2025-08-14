@@ -7,6 +7,17 @@ let color = ["pink","orange","yellow","blue"];
 let h3 = document.querySelector("h3");
 let container = document.querySelector(".container");
 let startBtn = document.querySelector(".start");
+let instbtn = document.querySelector(".instructions");
+let closeBtn = document.querySelector(".close")
+let inst = document.querySelector(".inst")
+
+instbtn.addEventListener("click",function(){
+    inst.classList.add("visible");
+})
+
+closeBtn.addEventListener("click",function(){
+    inst.classList.remove("visible");
+})
 
 startBtn.addEventListener("click",function(){
 if (started == false){
